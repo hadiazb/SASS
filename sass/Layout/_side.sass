@@ -6,6 +6,7 @@
 body 
     background-color: #757c76a9
     color: rgba(245, 245, 245, 0.719)
+    @include max-width()
 
 .header
     width: 100%
@@ -14,3 +15,9 @@ body
     &__login
         background-color: rgba(234, 235, 256, 0.7)
         font-family: Verdana, Geneva, Tahoma, sans-serif
+
+.section
+    @include max-width()
+    background: #ccc0a0
+    @include respond-to(800px)
+        background: #fff000
