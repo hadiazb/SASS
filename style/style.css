@@ -1,3 +1,53 @@
+.normal {
+  font-weight: normal;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-weight: italic;
+}
+
+.icon-40px {
+  font-size: 40px;
+  height: 40px;
+  width: 40px;
+}
+
+.icon-50px {
+  font-size: 50px;
+  height: 50px;
+  width: 50px;
+}
+
+.icon-80px {
+  font-size: 80px;
+  height: 80px;
+  width: 80px;
+}
+
+.class-1 {
+  content: "1";
+}
+
+.class-2 {
+  content: "2";
+}
+
+.class-3 {
+  content: "3";
+}
+
+.class-4 {
+  content: "4";
+}
+
+.p {
+  color: white;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,6 +56,7 @@
 
 body {
   background-color: #757c76a9;
+  z-index: 10;
   color: rgba(245, 245, 245, 0.719);
   max-width: 1024px;
   margin-left: auto;
@@ -16,6 +67,7 @@ body {
   width: 100%;
   height: 100vh;
   margin: 10px 20px 30px;
+  z-index: 1;
 }
 .header__login {
   background-color: rgba(234, 235, 255, 0.7);
@@ -27,10 +79,14 @@ body {
   margin-left: auto;
   margin-right: auto;
   background: #ccc0a0;
+  z-index: 100;
+  padding: 25px;
+  font-size: 14px;
 }
 @media screen and (min-width: 800px) {
   .section {
     background: #fff000;
+    z-index: 1000;
   }
 }
 
